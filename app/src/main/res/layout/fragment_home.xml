@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp">
+
+            <RelativeLayout
+                android:id="@+id/card_preview_back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card_gradient" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/hide_cvc"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight=".47"
+                        android:background="@drawable/slash_slash_gradiet" />
+
+                    <TextView
+                        android:id="@+id/card_preview_cvc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_toRightOf="@+id/hide_cvc"
+                        android:layout_weight=".1"
+                        android:hint="CCV"
+                        android:text="CCV"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/card_preview_front"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:src="@drawable/card_gradient" />
+
+                <TextView
+                    android:id="@+id/hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="35dp"
+
+                    android:hint="code"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff" />
+
+                <TextView
+                    android:id="@+id/dateAndTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="39dp"
+
+                    android:hint="Date"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff" />
+
+                <TextView
+                    android:id="@+id/card_preview_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:text="code"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    <LinearLayout
+                android:id="@+id/payment_amount_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/payment_amount_holder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Payment"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="65dp"
+    android:orientation="vertical">
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/background_edit_btn"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:spinnerMode="dialog">
+
+
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+
+                android:background="@drawable/background_edit_btn"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:spinnerMode="dialog">
+
+
+            </Spinner>
+
+    <EditText
+        android:id="@+id/harga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cost"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/deskripsi"
+        android:inputType="textMultiLine"
+    android:lines="8"
+android:hint="Description"
+    android:gravity="top|left"
+    android:maxLines="6"
+    android:layout_height="100dp"
+    android:layout_width="match_parent"
+    android:scrollbars="vertical"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imgCamera"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+
+            android:background="@color/colorPrimaryDark"
+
+            android:scaleType="centerCrop" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Photo Bukti"
+
+            android:id="@+id/btncamera"/>
+        <Button
+            android:id="@+id/uploadb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Bukti"/>
+    </LinearLayout>
+
+</LinearLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="500dp"
+
+                android:layout_height="wrap_content"
+                >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+
+                    android:gravity="center">
+                    <LinearLayout
+
+                        android:orientation="vertical"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/fountain_pen"/>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:foregroundGravity="center"
+                        android:text="aprroval"
+                        android:textColor="@color/biru"
+                        android:textSize="20sp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent" />
+                    </LinearLayout>
+                    <LinearLayout
+
+                        android:orientation="vertical"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:id="@+id/userttd"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/fountain_pen"/>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:foregroundGravity="center"
+                        android:text="aprroval"
+                        android:textColor="@color/biru"
+                        android:textSize="20sp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"  />
+                    </LinearLayout>
+                    <LinearLayout
+
+                        android:orientation="vertical"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/fountain_pen" />
+
+                        <TextView
+                        android:layout_gravity="center"
+                        android:foregroundGravity="center"
+                        android:text="aprroval"
+                        android:textColor="@color/biru"
+                        android:textSize="20sp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+            <Button
+                android:id="@+id/btnmake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/expiry_date_layout"
+                android:layout_marginTop="600dp"
+                android:background="@drawable/background_pay_btn"
+                android:padding="5dp"
+                android:text="submit"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/payment_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/card_name"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:fontFamily="sans-serif"
+                android:paddingRight="10dp"
+                android:text="Rp00.00"
+                android:textColor="@color/text_color"
+                android:textSize="25sp" />
+
+    >
+    <ProgressBar
+        android:foregroundGravity="center"
+        android:id="@+id/pb"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
+
+

@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">PROTOYPE</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="title_activity_signature">signature</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="clear_pad" />
+    <string name="compress_signature" />
+    <string name="agreement" />
+    <string name="save_signature" />
+    <string name="refresh">Refresh</string>
+    <string name="price_with_currency">₹%.2f</string>
+    <string name="price_with_currency_string">₹%s</string>
+    <string name="total_price_with_currency_string">Total: ₹%s</string>
+    <string name="lbl_view_cart">VIEW CART</string>
+    <string name="cart_info_bar_data">%d Items | ₹%s</string>
+    <string name="clear_cart">Clear Cart</string>
+    <string name="title_activity_transactions">Transactions</string>
+    <string name="uploadImages">Set your image</string>
+    <string name="msg_loading">Loading…</string>
+    <string name="buffering_string">Buffering&#8230;</string>
+    <string name="toast_message">Playback completed.</string>
+    <string name="pick_file">Pick file</string>
+    <string name="upload_file">Upload file</string>
+    <string name="toast_pick_file_error">Unable to pick file. Check status of file manager.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_checkout">CHECKOUT (%s)</string>
+    <string name="lbl_item_price_quantity">%s x %d</string>
+    <string name="lbl_your_cart">Your Cart</string>
+    <string name="title_activity_paytm_activity">Order Status</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="login">Login</string>
+    <string name="msg_enter_credentials">Enter email and username!</string>
+    <string name="logout">Logout</string>
+    <string name="hint_name">Fullname</string>
+    <string name="register">Register</string>
+    <string name="msg_fill_the_form">Please fill the form!</string>
+    <string name="lbl_create_account">Don\'t have an account? Sign Up here.</string>
+    <string name="lbl_existing_account">Already have an account? Login here</string>
+    <string name="msg_unknown">Unknown error occurred! Please try again. Check Android Studio\'s LogCat for detailed error report.</string>
+    <string name="error">Error</string>
+    <string name="msg_preparing_order">Preparing your order</string>
+    <string name="msg_fetching_checksum">Getting checksum value from the server</string>
+    <string name="msg_redirecting_to_paytm">Redirecting to PayTM gateway</string>
+    <string name="msg_verifying_status">Verifying transaction status on server</string>
+    <string name="msg_order_placed_successfully">Your order placed successfully!</string>
+    <string name="thank_you">THANK YOU</string>
+    <string name="btn_check_order">CHECK ORDERS</string>
+    <string name="title_preparing_order">Preparing Order</string>
+    <string name="msg_order_placed_failed">Order couldn\'t be placed. Plase contact support.</string>
+    <string name="order_failed">ORDER FAILED</string>
+    <string name="activity_title_orders">My Orders</string>
+    <string name="order_placed">Order Placed</string>
+    <string name="order_id">Order Id #%d</string>
+    <string name="transaction_failed">Transaction Failed</string>
+    <string name="transactions">NO DATA</string>
+    <string name="open" >Drawer Open</string>
+    <string name="close" >Drawer Close</string>
+
+    <string name="selected_item">Selected item:</string>
+    <string name="image_picker_provider_authority_suffix" translatable="false">.imagepicker.provider</string>
+
+    <string name="title_choose_image_provider">Choose</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="title_gallery">Gallery</string>
+    <string name="title_camera">Camera</string>
+
+    <string name="message_gallery_permission_denied">Read External Storage permission is needed to select Image. Please turn on the requested permission from Settings > Permissions.</string>
+    <string name="message_camera_permission_denied">Camera and External Storage permissions are needed to capture the image. Turning off any permission won\'t allow the application to run smoothly. Please turn on all requested permissions from Settings > Permissions.</string>
+    <string name="permission_gallery_denied">
+        <![CDATA[Storage permission is needed to pick gallery image. Please allow storage permission from Settings > Permissions.]]></string>
+    <string name="permission_camera_extended_denied">
+        <![CDATA[Camera and Storage permissions are needed to take a picture. Please allow both the requested permissions from Settings > Permissions.]]></string>
+    <string name="permission_camera_denied">
+        <![CDATA[Storage permission is needed to take a picture. Please allow storage permission from Settings > Permissions.]]></string>
+    <string name="storage_permission_rationale_title">Storage permission required</string>
+    <string name="storage_permition_rationale_message">In order to take a picture, you must grant this permission!</string>
+    <string name="storage_permission_denied_message">Storage permission is required in order to take a photo with the camera</string>
+    <string name="error_failed_to_create_camera_image_file">Failed to create Camera image file</string>
+    <string name="error_failed_pick_gallery_image">Failed to pick Gallery image</string>
+    <string name="error_failed_to_crop_image">Failed to crop image</string>
+    <string name="error_failed_to_compress_image">Failed to compress image</string>
+    <string name="error_task_cancelled">Task Cancelled</string>
+    <string name="error_camera_app_not_found">Camera app not found</string>
+</resources>
